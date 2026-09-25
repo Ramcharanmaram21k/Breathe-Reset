@@ -34,7 +34,14 @@ body.phase-exhale .phase-tint { opacity: 1; background: rgba(199,131,109,.08); }
 
 .sidebar { width: var(--sidebar-w); min-height: 100vh; display: flex; flex-direction: column; padding: 30px 22px 24px; background: rgba(239,244,238,.72); border-right: 1px solid var(--line); backdrop-filter: blur(16px); }
 .sidebar-brand { display: flex; gap: 10px; align-items: center; padding: 0 4px 28px; border-bottom: 1px solid var(--line); }
-.brand-icon { color: var(--clay); font-size: 27px; line-height: 1; }
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
 .brand-text, .brand-text-inline, .exercise-title, .phase-name, .stat-value, .complete-title { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
 .brand-text, .brand-text-inline { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; letter-spacing: .01em; }
 .brand-text { color: var(--ink); font-size: 22px; line-height: .9; white-space: nowrap; }
@@ -186,6 +193,7 @@ body.phase-exhale .phase-dot.active { background: var(--clay); }
   .main-area { min-height: 100svh; padding: 18px 18px 22px; }
   .main-header { flex-wrap: wrap; }
   .mobile-brand { display: flex; align-items: center; gap: 8px; width: 100%; margin-bottom: 13px; }
+  .mobile-brand .brand-logo { width: 28px; height: 28px; }
   .mobile-theme-toggle { display: grid; }
   .brand-text-inline { color: var(--ink); font-size: 17px; }
   .exercise-title { font-size: 25px; }
